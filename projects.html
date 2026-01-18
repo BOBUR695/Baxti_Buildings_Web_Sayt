@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Наши проекты - BAXTI BUILDINGS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+        <link rel="shortcut icon" href="{3665DC87-B508-473E-B1F9-65DCAAB72BB9}.png" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0047AB", // Cobalt Blue
+                        "background-light": "#f5f7f8", // Not used per request, but kept for consistency
+                        "background-dark": "#000000", // Black background
+                    },
+                    fontFamily: {
+                        "display": ["Montserrat", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .group:hover .group-hover\:opacity-100 {
+            opacity: 1;
+        }
+
+        .group:hover .group-hover\:scale-105 {
+            transform: scale(1.05);
+        }
+
+        .carousel-slide {
+    min-width: 100%;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 9999px;
+    background: rgba(255,255,255,0.5);
+}
+
+.dot.active {
+    background: white;
+}
+    </style>
+</head>
+
+<body class="bg-background-dark font-display text-white">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+           <header
+  class="flex items-center justify-between border-b border-gray-800 py-4">
+
+  <div class="flex items-center gap-3">
+    <h2 class="text-lg font-bold">BAXTI BUILDINGS</h2>
+  </div>
+
+  <!-- Desktop nav -->
+  <nav class="hidden md:flex gap-8">
+    <a class="text-white/70 hover:text-white text-sm" href="index.html">Главная</a>
+    <a class="text-white/70 hover:text-white text-sm" href="Onas.html">О нас</a>
+    <a class="text-primary text-sm font-bold" href="projects.html">Проекты</a>
+    <a class="text-white/70 hover:text-white text-sm" href="Uslugi.html">Услуги</a>
+    <a class="text-white/70 hover:text-white text-sm" href="kontact.html">Контакты</a>
+  </nav>
+
+  <!-- Burger -->
+  <button id="burger" class="md:hidden text-2xl">☰</button>
+</header>
+
+
+<div id="mobileMenu"
+     class="hidden flex-col gap-6 bg-black border-b border-gray-800 py-6 text-center md:hidden">
+  <a href="index.html">Главная</a>
+  <a href="Onas.html">О нас</a>
+  <a href="projects.html" class="text-primary font-bold">Проекты</a>
+  <a href="Uslugi.html">Услуги</a>
+  <a href="kontact.html">Контакты</a>
+</div>
+
+
+
+            <main class="flex flex-col py-10 md:py-16">
+                <div class="flex flex-wrap justify-between gap-4 px-0 pb-10">
+                    <h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em]">Наши проекты</h1>
+                </div>
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+<a href="./kontact.html" class="relative block overflow-hidden rounded-lg">
+    <div class="carousel relative w-full h-full touch-pan-x">
+        <div class="carousel-track flex transition-transform duration-300 ease-out">
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("IMG_0677 (2).JPG")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("IMG_0098.PNG")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("IMG_0687 (2).JPG")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("IMG_5593.JPG")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("IMG_5597.JPG")'></div>
+        </div>
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+
+        <!-- dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</a>
+
+ <a href="./kontact.html" class="relative block overflow-hidden rounded-lg">
+    <div class="carousel relative w-full h-full touch-pan-x">
+        <div class="carousel-track flex transition-transform duration-300 ease-out">
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-14-36.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-14-51.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-14-59.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-05.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-09.jpg")'></div>
+        </div>
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+
+        <!-- dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</a>
+<a href="./kontact.html" class="relative block overflow-hidden rounded-lg">
+    <div class="carousel relative w-full h-full touch-pan-x">
+        <div class="carousel-track flex transition-transform duration-300 ease-out">
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-22.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-25.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-28.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-32.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-38.jpg")'></div>
+        </div>
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+
+        <!-- dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</a>
+ <a href="./kontact.html" class="relative block overflow-hidden rounded-lg">
+    <div class="carousel relative w-full h-full touch-pan-x">
+        <div class="carousel-track flex transition-transform duration-300 ease-out">
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-41.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-46.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-15-53.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-05.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-08.jpg")'></div>
+        </div>
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+
+        <!-- dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</a>
+         <a href="./kontact.html" class="relative block overflow-hidden rounded-lg">
+    <div class="carousel relative w-full h-full touch-pan-x">
+        <div class="carousel-track flex transition-transform duration-300 ease-out">
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-14.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-19.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-23.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-30.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-32.jpg")'></div>
+        </div>
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+
+        <!-- dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</a>
+           <a href="./kontact.html" class="relative block overflow-hidden rounded-lg">
+    <div class="carousel relative w-full h-full touch-pan-x">
+        <div class="carousel-track flex transition-transform duration-300 ease-out">
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-37.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-40.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-43.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-54.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-17-58.jpg")'></div>
+        </div>
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+
+        <!-- dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</a>
+<a href="./kontact.html" class="relative block overflow-hidden rounded-lg">
+    <div class="carousel relative w-full h-full touch-pan-x">
+        <div class="carousel-track flex transition-transform duration-300 ease-out">
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-18-01.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-18-07.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-18-04.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_17-18-07.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_18-01-00.jpg")'></div>
+        </div>
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+
+        <!-- dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</a>
+<a href="./kontact.html" class="relative block overflow-hidden rounded-lg">
+    <div class="carousel relative w-full h-full touch-pan-x">
+        <div class="carousel-track flex transition-transform duration-300 ease-out">
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_18-01-06.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_18-01-09.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_18-01-13.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_18-10-36.jpg")'></div>
+            <div class="carousel-slide bg-cover bg-center aspect-[3/4]"
+                style='background-image:url("photo_2026-01-18_18-10-41.jpg")'></div>
+        </div>
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+
+        <!-- dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</a>
+<div class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-primary/90 transition-colors">
+    <a href="https://www.instagram.com/baxti_buildings/">Смотреть больше проектов</a>
+</div>
+                </div>
+            </main>
+            <footer class="mt-auto flex flex-col gap-8 border-t border-solid border-gray-800 py-10 text-center">
+                <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+                    <a class="flex items-center gap-2 text-gray-400 transition-colors hover:text-white" href="#">
+                        <div class="size-4 text-primary">
+                            <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <span class="text-base font-semibold">BAXTI BUILDINGS</span>
+                    </a>
+                    <div class="flex flex-col flex-wrap items-center justify-center gap-x-8 gap-y-4 md:flex-row">
+                        <a class="text-gray-400 text-sm font-normal leading-normal transition-colors hover:text-white"
+                            href="./kontact.html">Телефон: +998(94) 449-59-59</a>
+                        <a class="text-gray-400 text-sm font-normal leading-normal transition-colors hover:text-white"
+                            href="./kontact.html">Email: baxtibuilding@mail.ru</a>
+                        <span class="text-gray-400 text-sm font-normal leading-normal">Адрес:Tashkent city,NESTONE C block</span>
+                    </div>
+                </div>
+                <p class="text-gray-500 text-sm font-normal leading-normal">© 2024 BAXTI BUILDINGS</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <script>
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.dot');
+
+    let index = 0;
+    let startX = 0;
+    let currentX = 0;
+    let isDragging = false;
+
+    function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((d, i) => d.classList.toggle('active', i === index));
+    }
+
+    carousel.addEventListener('pointerdown', e => {
+        isDragging = true;
+        startX = e.clientX;
+        carousel.setPointerCapture(e.pointerId);
+    });
+
+    carousel.addEventListener('pointermove', e => {
+        if (!isDragging) return;
+        currentX = e.clientX - startX;
+    });
+
+    carousel.addEventListener('pointerup', () => {
+        if (!isDragging) return;
+        isDragging = false;
+
+        if (currentX < -50 && index < slides.length - 1) index++;
+        if (currentX > 50 && index > 0) index--;
+
+        currentX = 0;
+        update();
+    });
+});
+</script>
+
+
+    <script>
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("mobileMenu");
+
+  burger.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>

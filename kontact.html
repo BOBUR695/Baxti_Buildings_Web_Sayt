@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Контакты - BAXTI BUILDINGS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="{3665DC87-B508-473E-B1F9-65DCAAB72BB9}.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0047ab",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#000000",
+                    },
+                    fontFamily: {
+                        "display": ["Montserrat"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <header
+                    class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 py-5">
+                    <div class="flex items-center gap-4 text-white">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                                    fill="currentColor" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">BAXTI BUILDINGS</h2>
+                    </div>
+                    <nav class="hidden md:flex flex-1 justify-end gap-8">
+                        <div class="flex items-center gap-9">
+                            <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                href="index.html">Главная</a>
+                            <a class="text-white/70 hover:text-white text-sm font-medium leading-normal" href="Onas.html">О
+                                нас</a>
+                            <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                href="projects.html">Проекты</a>
+                            <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                href="Uslugi.html">Услуги</a>
+                            <a class="text-white text-sm font-semibold leading-normal border-b-2 border-primary pb-1"
+                                href="kontact.html">Контакты</a>
+                        </div>
+                    </nav>
+                </header>
+                <main class="py-16 sm:py-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+                        <div class="flex flex-col gap-8">
+                            <div>
+                                <h1 class="text-white text-4xl sm:text-5xl font-black leading-tight tracking-tight">
+                                    Свяжитесь с нами</h1>
+                                <p class="text-white/70 text-base font-normal leading-normal pt-4">Оставьте свои данные,
+                                    и мы свяжемся с вами для обсуждения вашего проекта.</p>
+                            </div>
+                            <form class="flex flex-col gap-6">
+                                <div class="flex flex-col">
+                                    <label class="text-white text-base font-medium leading-normal pb-2"
+                                        for="name">Имя</label>
+                                    <input
+                                        class="form-input flex w-full resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/20 bg-white/5 h-14 placeholder:text-white/40 p-4 text-base font-normal leading-normal transition-colors focus:border-primary"
+                                        id="name" placeholder="Введите ваше имя" type="text" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-white text-base font-medium leading-normal pb-2"
+                                        for="phone">Телефон</label>
+                                    <input
+                                        class="form-input flex w-full resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/20 bg-white/5 h-14 placeholder:text-white/40 p-4 text-base font-normal leading-normal transition-colors focus:border-primary"
+                                        id="phone" placeholder="+998(  ) 123-45-67" type="tel" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-white text-base font-medium leading-normal pb-2"
+                                        for="message">Сообщение</label>
+                                    <textarea
+                                        class="form-textarea flex w-full resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/20 bg-white/5 min-h-36 placeholder:text-white/40 p-4 text-base font-normal leading-normal transition-colors focus:border-primary"
+                                        id="message" placeholder="Расскажите о вашем проекте..."></textarea>
+                                </div>
+                                <button
+                                    class="flex items-center justify-center whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-14 px-8 rounded-lg bg-primary text-white hover:bg-primary/90 text-base mt-2"
+                                    type="submit">Отправить</button>
+                            </form>
+                        </div>
+                        <div class="flex flex-col gap-8">
+                            <h3 class="text-white text-2xl font-bold leading-tight">Контактная информация</h3>
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-start gap-4">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-2xl mt-1">location_on</span>
+                                    <div>
+                                        <p class="text-white font-semibold">Адрес</p>
+                                        <p class="text-white/70">Tashkent city,NESTONE C block</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-2xl mt-1">mail</span>
+                                    <div>
+                                        <p class="text-white font-semibold">E-mail</p>
+                                        <a class="text-white/70 hover:text-primary transition-colors"
+                                            href="mailto:info@baxti.build">baxtibuilding@mail.ru</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-2xl mt-1">phone</span>
+                                    <div>
+                                        <p class="text-white font-semibold">Телефон</p>
+                                        <a class="text-white/70 hover:text-primary transition-colors"
+                                            href="tel:+998 94 449 59 59">+998(94) 449-59-59</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aspect-video w-full rounded-xl overflow-hidden mt-4">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="Карта города с отмеченным местоположением офиса" data-location="Город"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvyyJjUVjHwWyV_6ZjiPGK1mge39UKsMZ8jEWnQnC6LmNslb0HdlEJjoXXU0g9KjHYQhQJCtomNIbsQ36NIYbxkaIiWK-_kUJ2EvmlfCfdWkxl-qQqvUhD-FWA9kzXWdHpdaPVBy1wBLTQaAM3CFLKFgS4vJ6BM6OfLCiphqTUCv9f0ou6XlU_tygxqDP-gVG-zgU6JwXnoiNRb_hq9MDnspekOP5mjub7m1abQmPQh59vlwxEIGQc-0brzcpYZ2-r3Y05SSdK4c0" />
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="border-t border-solid border-white/10 py-8 mt-16">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="flex items-center gap-3 text-white">
+                            <div class="size-5 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">BAXTI BUILDINGS
+                            </h2>
+                        </div>
+                        <div class="flex items-center gap-6 text-sm">
+                            <a class="text-white/70 hover:text-primary transition-colors" href="tel:+998 94 449 59 59">+998
+                                (94) 449-59-59</a>
+                            <a class="text-white/70 hover:text-primary transition-colors"
+                                href="mailto:info@baxti.build">baxtibuilding@mail.ru</a>
+                        </div>
+                        <p class="text-white/50 text-sm text-center md:text-right">© 2024 BAXTI BUILDINGS. Все права
+                            защищены.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

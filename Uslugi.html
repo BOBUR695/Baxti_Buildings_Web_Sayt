@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Услуги - BAXTI BUILDINGS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="{3665DC87-B508-473E-B1F9-65DCAAB72BB9}.png" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0048ad",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1723",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 300,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display">
+    <div
+        class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <!-- TopNavBar -->
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 dark:border-white/10 px-4 sm:px-10 py-3">
+                        <div class="flex items-center gap-4 text-white">
+                            <div class="size-4 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">BAXTI BUILDINGS
+                            </h2>
+                        </div>
+                        <div class="hidden md:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                    href="./index.html">Главная</a>
+                                <a class="text-primary text-sm font-bold leading-normal" href="./Uslugi.html">Услуги</a>
+                                <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                    href="./projects.html">Проекты</a>
+                                <a class="text-white/70 hover:text-white text-sm font-medium leading-normal" href="./Onas.html">О
+                                    нас</a>
+                                <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                    href="./kontact.html">Контакты</a>
+                            </div>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                <a href="./kontact.html">Связаться с нами</a>
+                            </button>
+                        </div>
+                        <!-- Mobile Menu Icon (optional) -->
+    <div class="md:hidden">
+    <button id="burgerBtn" class="text-white">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</div>
+                    </header>
+
+
+                    <div id="mobileMenu"
+     class="hidden md:hidden flex-col gap-6 px-6 py-6 border-b border-white/10 bg-background-dark text-center">
+    <a class="text-white text-lg" href="./index.html">Главная</a>
+    <a class="text-primary text-lg font-bold" href="./Uslugi.html">Услуги</a>
+    <a class="text-white text-lg" href="./projects.html">Проекты</a>
+    <a class="text-white text-lg" href="./Onas.html">О нас</a>
+    <a class="text-white text-lg" href="./kontact.html">Контакты</a>
+
+    <a href="./kontact.html"
+       class="mt-4 inline-flex justify-center rounded-lg bg-primary py-3 text-white font-bold">
+        Связаться с нами
+    </a>
+</div>
+
+                    <main class="flex-grow">
+                        <!-- PageHeading -->
+                        <div class="flex flex-wrap justify-between gap-3 p-4 py-16 sm:py-24 text-center">
+                            <div class="flex w-full flex-col gap-3">
+                                <p class="text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">
+                                    Наши Услуги</p>
+                                <p
+                                    class="text-white/60 text-base sm:text-lg font-normal leading-normal max-w-2xl mx-auto">
+                                    Мы предлагаем полный спектр строительных и дизайнерских решений для вашего проекта.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- TextGrid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+                            <div
+                                class="flex flex-1 flex-col gap-4 rounded-xl border border-white/10 bg-[#161d29] p-6 hover:border-primary/50 hover:bg-primary/10 transition-all group">
+                                <div class="text-primary">
+                                    <span class="material-symbols-outlined" style="font-size: 32px;">domain</span>
+                                </div>
+                                <div class="flex flex-col gap-2 flex-grow">
+                                    <h2 class="text-white text-lg font-bold leading-tight">Строительство</h2>
+                                    <p class="text-white/60 text-sm font-normal leading-normal flex-grow">Возводим
+                                        надежные и современные здания с нуля, соблюдая все стандарты качества.</p>
+                                </div>
+                                <a class="inline-flex items-center gap-2 text-primary text-sm font-bold mt-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                                    href="./kontact.html">
+                                    Подробнее
+                                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                            <div
+                                class="flex flex-1 flex-col gap-4 rounded-xl border border-white/10 bg-[#161d29] p-6 hover:border-primary/50 hover:bg-primary/10 transition-all group">
+                                <div class="text-primary">
+                                    <span class="material-symbols-outlined" style="font-size: 32px;">construction</span>
+                                </div>
+                                <div class="flex flex-col gap-2 flex-grow">
+                                    <h2 class="text-white text-lg font-bold leading-tight">Ремонт и отделка</h2>
+                                    <p class="text-white/60 text-sm font-normal leading-normal flex-grow">Выполняем
+                                        качественные ремонтные и отделочные работы любой сложности.</p>
+                                </div>
+                                <a class="inline-flex items-center gap-2 text-primary text-sm font-bold mt-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                                    href="./kontact.html">
+                                    Подробнее
+                                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                            <div
+                                class="flex flex-1 flex-col gap-4 rounded-xl border border-white/10 bg-[#161d29] p-6 hover:border-primary/50 hover:bg-primary/10 transition-all group">
+                                <div class="text-primary">
+                                    <span class="material-symbols-outlined" style="font-size: 32px;">palette</span>
+                                </div>
+                                <div class="flex flex-col gap-2 flex-grow">
+                                    <h2 class="text-white text-lg font-bold leading-tight">Дизайн интерьеров</h2>
+                                    <p class="text-white/60 text-sm font-normal leading-normal flex-grow">Создаем
+                                        функциональные и эстетичные интерьеры, отражающие вашу индивидуальность.</p>
+                                </div>
+                                <a class="inline-flex items-center gap-2 text-primary text-sm font-bold mt-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                                    href="./kontact.html">
+                                    Подробнее
+                                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                            <div
+                                class="flex flex-1 flex-col gap-4 rounded-xl border border-white/10 bg-[#161d29] p-6 hover:border-primary/50 hover:bg-primary/10 transition-all group">
+                                <div class="text-primary">
+                                    <span class="material-symbols-outlined" style="font-size: 32px;">architecture</span>
+                                </div>
+                                <div class="flex flex-col gap-2 flex-grow">
+                                    <h2 class="text-white text-lg font-bold leading-tight">Архитектурное проектирование
+                                    </h2>
+                                    <p class="text-white/60 text-sm font-normal leading-normal flex-grow">Разрабатываем
+                                        детальные архитектурные планы для проектов любого масштаба.</p>
+                                </div>
+                                <a class="inline-flex items-center gap-2 text-primary text-sm font-bold mt-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                                    href="./kontact.html">
+                                    Подробнее
+                                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </main>
+                    <!-- Footer -->
+                    <footer
+                        class="flex flex-col gap-8 px-5 py-16 text-center border-t border-solid border-white/10 mt-16 sm:mt-24">
+                        <div class="flex items-center gap-9">
+                            <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                href="./index.html">Главная</a>
+                            <a class="text-white/70 hover:text-white text-sm font-medium leading-normal" href="./Onas.html">О
+                                нас</a>
+                            <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                href="./projects.html">Проекты</a>
+                            <a class="text-white/70 hover:text-white text-sm font-medium leading-normal"
+                                href="./Uslugi.html">Услуги</a>
+                            <a class="text-white text-sm font-semibold leading-normal border-b-2 border-primary pb-1"
+                                href="./kontact.html">Контакты</a>
+                        </div>
+                        <div class="flex items-center justify-center gap-4 text-white/60">
+                            <a class="hover:text-primary transition-colors" href="./projects.html">
+                                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+                                    <path clip-rule="evenodd"
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a class="hover:text-primary transition-colors" href="https://www.instagram.com/baxti_buildings/">
+                                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+                                    <path clip-rule="evenodd"
+                                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 8.118a4.882 4.882 0 110 9.764 4.882 4.882 0 010-9.764zm0 2.118a2.764 2.764 0 100 5.528 2.764 2.764 0 000-5.528zm4.945-3.335a1.18 1.18 0 11-2.36 0 1.18 1.18 0 012.36 0z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a class="hover:text-primary transition-colors" href="./kontact.html">
+                                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="text-white/60 text-sm font-normal leading-normal">© 2024 BAXTI BUILDINGS. Все права
+                            защищены.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const burgerBtn = document.getElementById("burgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    burgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+
+</body>
+</html>
