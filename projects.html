@@ -55,6 +55,10 @@
 .dot.active {
     background: white;
 }
+        .carousel {
+    touch-action: pan-y;
+}
+
     </style>
 </head>
 
@@ -354,15 +358,16 @@
     </div>
 
 
-    <script>
+   <script>
 document.querySelectorAll('.carousel').forEach(carousel => {
     const track = carousel.querySelector('.carousel-track');
     const slides = carousel.querySelectorAll('.carousel-slide');
     const dots = carousel.querySelectorAll('.dot');
+    const link = carousel.closest('a');
 
     let index = 0;
     let startX = 0;
-    let currentX = 0;
+    let deltaX = 0;
     let isDragging = false;
 
     function update() {
@@ -373,26 +378,40 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     carousel.addEventListener('pointerdown', e => {
         isDragging = true;
         startX = e.clientX;
+        deltaX = 0;
         carousel.setPointerCapture(e.pointerId);
     });
 
     carousel.addEventListener('pointermove', e => {
         if (!isDragging) return;
-        currentX = e.clientX - startX;
+        deltaX = e.clientX - startX;
     });
 
-    carousel.addEventListener('pointerup', () => {
+    carousel.addEventListener('pointerup', e => {
         if (!isDragging) return;
         isDragging = false;
 
-        if (currentX < -50 && index < slides.length - 1) index++;
-        if (currentX > 50 && index > 0) index--;
+        // если был свайп — отменяем переход
+        if (Math.abs(deltaX) > 10) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
 
-        currentX = 0;
+        if (deltaX < -50 && index < slides.length - 1) index++;
+        if (deltaX > 50 && index > 0) index--;
+
         update();
+    });
+
+    // блок клика если был свайп
+    link.addEventListener('click', e => {
+        if (Math.abs(deltaX) > 10) {
+            e.preventDefault();
+        }
     });
 });
 </script>
+
 
 
     <script>
